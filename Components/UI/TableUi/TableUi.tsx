@@ -50,7 +50,7 @@ export default function TableUi(props: any) {
                         Authorization: 'Bearer ' + token
                     }
                 }).then((res) => {
-                    // console.log(res, '44444444')
+                    console.log(res, '44444444')
                     setFetchData(res.data.result)
                 }).catch((err) => {
                     console.log(err, '5555555')
@@ -213,14 +213,18 @@ export default function TableUi(props: any) {
                                     </TableCell> */}
 
                                     {
-                                        TABLE_CELL.map((items: any, index: any) =>
+                                        TABLE_CELL.map((items: any, index: any) => {
+                                            console.log(items === 'language.name' ? data[items] : null, ':::::::::::::::::', items, data)
+                                            return (
 
-                                            <TableCell
-                                                key={index} sx={{ cursor: 'pointer' }} align="center">
+                                                <TableCell
+                                                    key={index} sx={{ cursor: 'pointer' }} align="center">
+                                                    <Typography sx={{ color: TABLE_FONT_COLOUR }}> {data[items] || data.language.name} </Typography>
 
-                                                <Typography sx={{ color: TABLE_FONT_COLOUR }}> {data[items]} </Typography>
+                                                </TableCell>
 
-                                            </TableCell>
+                                            )
+                                        }
 
                                         )}
 
