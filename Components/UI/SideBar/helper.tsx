@@ -14,6 +14,7 @@ import SwitchAccountIcon from '@mui/icons-material/SwitchAccount';
 import CategoryIcon from '@mui/icons-material/Category';
 import SpeakerNotesIcon from '@mui/icons-material/SpeakerNotes';
 import { useQueryFetch } from '../../../hooks/useFetch';
+import OfferIcon from '@mui/icons-material/LocalOffer'; // This is just a hypothetical example; the actual name might be different
 
 
 
@@ -112,6 +113,20 @@ export const subRoutes: any = [
             {
                 text: 'All Payments',
                 path: '/payments'
+            },
+            // {
+            //     text: 'Chart Of Accounts',
+            //     path: '/account/chartofaccounts'
+            // },
+        ]
+    },
+    {
+        name: 'Offers',
+        icon: OfferIcon,
+        children: [
+            {
+                text: 'All Offers',
+                path: '/offer'
             },
             // {
             //     text: 'Chart Of Accounts',

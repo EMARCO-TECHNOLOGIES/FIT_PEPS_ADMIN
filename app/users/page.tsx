@@ -2,6 +2,7 @@
 import React from 'react'
 import TableUi from '../../Components/UI/TableUi/TableUi'
 import { Grid } from '@mui/material';
+import ToggleSwitch from '../../Components/UI/ToggleSwitch/ToggleSwitch';
 
 
 export default function page() {
@@ -11,7 +12,8 @@ export default function page() {
     const TABLE_CELL = ["firstName", "whatsApp", "state", "city", "place"];
 
     return (
-        <Grid container bgcolor="">
+        <Grid container bgcolor="" >
+
 
             <TableUi
 
