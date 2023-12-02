@@ -219,7 +219,7 @@ export default function TableUi(props: any) {
 
                                                 <TableCell
                                                     key={index} sx={{ cursor: 'pointer' }} align="center">
-                                                    <Typography sx={{ color: TABLE_FONT_COLOUR }}> {data[items] || data.language.name} </Typography>
+                                                    <Typography sx={{ color: TABLE_FONT_COLOUR }}> {data[items] || data?.language?.name} </Typography>
 
                                                 </TableCell>
 
