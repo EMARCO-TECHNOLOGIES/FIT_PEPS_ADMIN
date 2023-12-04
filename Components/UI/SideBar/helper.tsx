@@ -120,20 +120,20 @@ export const subRoutes: any = [
             // },
         ]
     },
-    {
-        name: 'Offers',
-        icon: OfferIcon,
-        children: [
-            {
-                text: 'All Offers',
-                path: '/offer'
-            },
-            // {
-            //     text: 'Chart Of Accounts',
-            //     path: '/account/chartofaccounts'
-            // },
-        ]
-    },
+    // {
+    //     name: 'Offers',
+    //     icon: OfferIcon,
+    //     children: [
+    //         {
+    //             text: 'All Offers',
+    //             path: '/offer'
+    //         },
+    //         // {
+    //         //     text: 'Chart Of Accounts',
+    //         //     path: '/account/chartofaccounts'
+    //         // },
+    //     ]
+    // },
 
 
 
